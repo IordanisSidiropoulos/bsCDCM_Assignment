@@ -18,4 +18,4 @@ if __name__ == "__main__":
     while counter <= max_books:
         book_price += 9.99   # book price
         counter += 1         # count of books is incremented by 1
-    print("The final books price is: {0:5.2f}".format(book_price))
+    print("The final books price is: {0:5.2f}€".format(book_price))
