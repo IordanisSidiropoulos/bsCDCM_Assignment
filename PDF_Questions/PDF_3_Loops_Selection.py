@@ -9,8 +9,10 @@
 # Description     : Home work for loops andSelection process.
 #
 """
+
+
 # Question 1
-if __name__ == "__main__":
+# if __name__ == "__main__":
 #    text = ""
 #    while 1:
 #        print("Guess the number: ")
@@ -22,35 +24,43 @@ if __name__ == "__main__":
 #    print("Bravoo!")
 
 # Question 2
-    harry_Potter_1 = "10"
-    title1 = "Harry Potter A"
-    harry_Potter_2 = "10"
-    title2 = "Harry Potter B"
-    harry_Potter_3 = "10"
-    title3 = "Harry Potter C"
-    harry_Potter_4 = "10"
-    title4 = "Harry Potter D"
-    harry_Potter_5 = "10"
-    title5 = "Harry Potter E"
-    total = float(harry_Potter_1) #+ float(harry_Potter_2) + float(harry_Potter_3) + float(harry_Potter_4) + float(harry_Potter_5)
-    print("Title: '{0}' / Cost: {1}€ / Running Total: {2}€"
-          .format(title1, harry_Potter_1, float(harry_Potter_1)), "\n"
-          "Title: '{0}' / Cost: {1}€ / Running Total: {2}€"
-          .format(title2, harry_Potter_2, float(harry_Potter_1) + float(harry_Potter_2)), "\n"
-          "Title: '{0}' / Cost: {1}€ / Running Total: {2}€"
-          .format(title3, harry_Potter_3, float(harry_Potter_1) + float(harry_Potter_2) + float(harry_Potter_3)), "\n"
-          "Title: '{0}' / Cost: {1}€ / Running Total: {2}€"
-          .format(title4, harry_Potter_4, float(harry_Potter_1) + float(harry_Potter_2) + float(harry_Potter_3)
-                  + float(harry_Potter_4)), "\n"
-          "Title: '{0}' / Cost: {1}€ / Running Total: {2}€"
-          .format(title5, harry_Potter_5, float(harry_Potter_1) + float(harry_Potter_2) + float(harry_Potter_3)
-                  + float(harry_Potter_4) + float(harry_Potter_5)))
+#    harry_Potter_1 = "10"
+#    title1 = "Harry Potter A"
+#    harry_Potter_2 = "10"
+#    title2 = "Harry Potter B"
+#    harry_Potter_3 = "10"
+#    title3 = "Harry Potter C"
+#    harry_Potter_4 = "10"
+#    title4 = "Harry Potter D"
+#    harry_Potter_5 = "10"
+#    title5 = "Harry Potter E"
+#    total = float(harry_Potter_1) #+ float(harry_Potter_2) + float(harry_Potter_3) + float(harry_Potter_4) + float(harry_Potter_5)
+#    print("Title: '{0}' / Cost: {1}€ / Running Total: {2}€"
+#          .format(title1, harry_Potter_1, float(harry_Potter_1)), "\n"
+#          "Title: '{0}' / Cost: {1}€ / Running Total: {2}€"
+#          .format(title2, harry_Potter_2, float(harry_Potter_1) + float(harry_Potter_2)), "\n"
+#          "Title: '{0}' / Cost: {1}€ / Running Total: {2}€"
+#          .format(title3, harry_Potter_3, float(harry_Potter_1) + float(harry_Potter_2) + float(harry_Potter_3)), "\n"
+#          "Title: '{0}' / Cost: {1}€ / Running Total: {2}€"
+#          .format(title4, harry_Potter_4, float(harry_Potter_1) + float(harry_Potter_2) + float(harry_Potter_3)
+#                  + float(harry_Potter_4)), "\n"
+#          "Title: '{0}' / Cost: {1}€ / Running Total: {2}€"
+#          .format(title5, harry_Potter_5, float(harry_Potter_1) + float(harry_Potter_2) + float(harry_Potter_3)
+#                  + float(harry_Potter_4) + float(harry_Potter_5)))
 
 
+# Question 2 (Correct)
+def book_entry():
+    total = 0
+
+    for i in range(1, 3):
+        book_title = input("Enter book {0} title:".format(i))
+        book_cost = input(f"Enter book {0} cost: ".format(i))
+        book_cost = float(book_cost)  # typecasting to an interval
+        total += book_cost
+        print("Book {0}, cost: {1}€, subtotal: {2}".format(book_title, book_cost, total))
+    print("\nThe final cost of your purchases is: {}".format(total))
 
 
-
-
-
-
-
+if __name__ == "__main__":
+    book_entry()

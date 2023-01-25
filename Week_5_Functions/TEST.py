@@ -33,3 +33,39 @@ def whoisthebest(person):
 
 if __name__ == "__main__":
     whoisthebest("Η μικρή Ελένη")
+
+if __name__ == "__main__":
+    your_guess = ""
+
+    while 1:
+        your_guess = input("Enter your guess: ")
+        your_guess = int(your_guess)
+        if your_guess == 5:
+            break
+        print("Again")
+    print("congrats")
+
+while 1:
+    print("NEW GAME")
+    i = input("Enter a NEW number: ")
+    i = int(i)
+    if i == 6:
+        print("Well done MANNN!!!")
+        noanswer = input("Play again?? [y/n]:\n")
+        noanswer = str(noanswer.lower())
+        if noanswer == "n":
+            print("Thank you! Goodbye!")
+            break
+        else:
+            print("Alright! Let's do this again!")
+    else:
+        print("Wrong answer...")
+        noanswer = input("Play again?? [y/n]:\n")
+        if noanswer == "n":
+            print("Thank you! Goodbye!")
+            break
+        else:
+            print("Alright! Let's do this again!")
+
+
+

@@ -14,7 +14,7 @@ if __name__ == "__main__":
     # letters
     from string import ascii_lowercase
 
-    manifesto = """individuals and interactionsover processes and tools
+    manifesto = """individuals and interactions over processes and tools
         working software over comprehensive documentation
         Customer collaboration over contract negotiation
         Responding to change over following a plan"""
